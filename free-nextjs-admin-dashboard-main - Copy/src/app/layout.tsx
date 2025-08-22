@@ -3,7 +3,6 @@ import './globals.css';
 
 import { SidebarProvider } from '@/context/SidebarContext';
 import { ThemeProvider } from '@/context/ThemeContext';
-import LoginPage from '@/components/auth/SignInForm'
 
 
 const outfit = Outfit({
@@ -21,7 +20,9 @@ export default function RootLayout({
         <ThemeProvider>
           <SidebarProvider>{children}</SidebarProvider>
         </ThemeProvider>
+        {/* {children} */}
       </body>
     </html>
   );
 }
+
