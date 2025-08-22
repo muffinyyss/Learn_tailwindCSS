@@ -18,10 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.className} dark:bg-gray-900`}>
-        {/* <ThemeProvider>
+        <ThemeProvider>
           <SidebarProvider>{children}</SidebarProvider>
-        </ThemeProvider> */}
-        <LoginPage/>
+        </ThemeProvider>
       </body>
     </html>
   );
