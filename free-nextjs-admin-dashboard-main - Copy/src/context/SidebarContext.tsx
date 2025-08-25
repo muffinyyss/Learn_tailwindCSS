@@ -24,6 +24,26 @@ export const useSidebar = () => {
   return context;
 };
 
+// export const useSidebar = (): SidebarContextType => {
+//   const ctx = useContext(SidebarContext);
+//   if (!ctx) {
+//     // fallback เมื่อไม่มี Provider (หน้า public/mainpages)
+//     return {
+//       isExpanded: false,
+//       isMobileOpen: false,
+//       isHovered: false,
+//       activeItem: null,
+//       openSubmenu: null,
+//       toggleSidebar: () => { },
+//       toggleMobileSidebar: () => { },
+//       setIsHovered: () => { },
+//       setActiveItem: () => { },
+//       toggleSubmenu: () => { },
+//     };
+//   }
+//   return ctx;
+// };
+
 export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
